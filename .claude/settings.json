@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /home/varanda/Research/claude-code-skill-tester-poc/claude-code-skill-tester/benchmarks)"
+    ],
+    "additionalDirectories": [
+      "/home/varanda/Research/claude-code-skill-tester-poc/claude-code-skill-tester"
+    ]
+  }
+}
