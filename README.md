@@ -42,11 +42,11 @@ Claude can execute these commands via the Bash tool. This benchmark validates th
 ## Benchmark Tasks
 
 ### Task 0: Base64 Encoding (Quick Test)
-Encodes /dev/zero via base64 in 20 parallel background tasks.
+Encodes /dev/zero via base64 in 20 parallel background tasks of Claude Code's BashTool.
 
 **Command:**
 ```bash
-for i in {1..20}; do (base64 /dev/zero 2>/dev/null | head -c 1000 &) done; wait
+base64 /dev/zero 
 ```
 
 **Metrics:**
@@ -55,7 +55,7 @@ for i in {1..20}; do (base64 /dev/zero 2>/dev/null | head -c 1000 &) done; wait
 - Throughput (tasks/second)
 
 **How to run:**
-Ask Claude: "Run 20 background tasks of `base64 /dev/zero | head -c 1000` and report total time and tasks/second."
+Ask Claude: "Run 20 background tasks of `base64 /dev/zero` and report total time and tasks/second."
 
 ---
 
